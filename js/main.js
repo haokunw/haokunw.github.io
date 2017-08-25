@@ -65,6 +65,10 @@ function scaleBannerVideoSize(element){
     });
 }
 
+// // scroll to middle
+// var targetOffset = $(thisTarget).offset().top-200;
+
+
 // ---------- home slider
 
 // hide all images in .home-area

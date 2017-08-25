@@ -96,19 +96,11 @@ section {
 
 header {
   max-width: 100%;
-  /*display: flex;*/
-  /*align-items: center;
-  justify-content: center;*/
 }
 
 div {
   margin: 10px auto;
 }
-
-/*hr {
-border: .2px solid #332f45;
-margin: 70px 0;
-}*/
 
 /* ----------------------------------------
 Typography
@@ -367,11 +359,12 @@ nav a {
   margin: 10px;
 }
 
-.hamburger {
+/*.hamburger {
   font-size: 30px;
   margin: 10px;
   display: none;
-}
+  float: right;
+}*/
 
 
 /* ----------------------------------------
@@ -495,7 +488,7 @@ Home
 }
 
 .video-container .filter {
-    z-index: 100;
+    z-index: 1;
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
@@ -546,15 +539,9 @@ Home
   transition: all .3s ease-in-out;
 }
 
-.home-achieve, .about-haokun {
+.home-achieve {
   display: flex;
   justify-content: space-between;
-}
-
-.about-haokun img {
-  width: 30%;
-  height: 30%;
-  margin: 30px;
 }
 
 .home-achieve h3 {
@@ -907,32 +894,37 @@ responsive
 @media screen and (max-width: 750px) {
   html {
     font-size: 14px;
+    line-height: 20px;
   }
 
   /* ------ typography ----------- */
   h1 {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 2.3rem;
+    line-height: 3rem;
+    width: 90%;
+    text-align: center;
+    display: block;
+  }
+
+  #home-h1 {
+    font-size: 1.2rem;
+    line-height: 3rem;
   }
 
   h2 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 10px;
   }
 
   h3 {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 
   h4 {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.2rem;
+    line-height: 2rem;
   }
 
   /* ------ section ----------- */
@@ -956,12 +948,35 @@ responsive
 
   /* ------ nav ----------- */
 
-  .hamburger {
+  /*.hamburger {
     display: inline-block;
+  }*/
+
+  nav {
+    background-color: #332f45;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    max-width: 100%;
   }
 
-  .navigation {
-    display: none;
+  .float-right {
+    margin-left: 0;
+    float: none;
+    transform: translate(-60px, 60px);
+  }
+
+  .float-right a {
+    display: block;
+    /*color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: .8px;
+    margin: 10px 30px 10px 5px;*/
   }
 
   /* ------ buttons ----------- */
@@ -969,8 +984,117 @@ responsive
     font-size: 16px;
   }
 
+  .cta-purple {
+    font-size: 16px;
+  }
+
+  /* ------ home page ----------- */
+  /*h1 {
+    max-width: 90%;
+
+  }*/
+
+  #home-name {
+    display: block;
+  }
+
+  .home-hero-content {
+    max-width: 100%;
+    margin: 0;
+    transform: translate(-50% -30%);
+  }
+
+  .about-haokun h2 {
+    margin: 30px 10px;
+  }
+
+  .arrow {
+    padding: .5rem; /* Arrow size */
+  }
+
+  .about-haokun p {
+    width: 95%;
+  }
+
+  .testimonial-content {
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 100%;
+  }
+
+  .testimonial-content h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .home-area h3 {
+    font-size: 2.3rem;
+    line-height: 4rem;
+    max-width: 90%;
+  }
+
+  .arrow-right {
+    top: 0;
+    right: 0;
+    transform: translate(-200%, 130px) rotate(225deg);
+  }
+
+  .arrow-left  {
+    top: 0;
+    left: 0;
+    transform: translate(200%, 130px) rotate(45deg);
+  }
+
+  .home-area.two {
+    background-position: right;
+  }
+
+  .home-area.four {
+    background-position: top;
+  }
+
+
+
+
+  .home-achieve {
+    display: block;
+  }
+
+
+  /* ------ resume page ----------- */
+  .space {
+    display: block;
+    margin-top: 10px;
+  }
+
+  /* ------ case study page ----------- */
+  .case-studies-first, .case-studies-second, .case-studies-third {
+    display: block;
+  }
+
+  .case-studies-second h2 {
+    transform: translateY(30px);
+  }
+
+  .case-studies-first img, .case-studies-second img, .case-studies-third img {
+    width: 250px;
+    padding: 0;
+    margin: 10px auto;
+  }
+
 
   /* ------ contact page ----------- */
+
+  .contact-h1{
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+
   .contact-info h3 {
     font-size: 16px;
   }
