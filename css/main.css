@@ -359,12 +359,12 @@ nav a {
   margin: 10px;
 }
 
-/*.hamburger {
+.hamburger {
   font-size: 30px;
   margin: 10px;
   display: none;
   float: right;
-}*/
+}
 
 
 /* ----------------------------------------
@@ -967,17 +967,17 @@ responsive
     transform: translate(-60px, 60px);
   }
 
-  .float-right a {
+  /*.float-right a {
     display: block;
-    /*color: white;
+    color: white;
     text-align: center;
     text-decoration: none;
     font-family: 'poppins', sans-serif;
     font-weight: 300;
     font-size: 16px;
     letter-spacing: .8px;
-    margin: 10px 30px 10px 5px;*/
-  }
+    margin: 10px 30px 10px 5px;
+  }*/
 
   /* ------ buttons ----------- */
   .cta-green {
@@ -1075,6 +1075,7 @@ responsive
   /* ------ case study page ----------- */
   .case-studies-first, .case-studies-second, .case-studies-third {
     display: block;
+    padding-bottom: 20px;
   }
 
   .case-studies-second h2 {
@@ -1085,6 +1086,7 @@ responsive
     width: 250px;
     padding: 0;
     margin: 10px auto;
+    display: block;
   }
 
 
