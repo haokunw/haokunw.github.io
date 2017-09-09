@@ -209,6 +209,12 @@ $('#ga').on('click', function(){
   $('#fa-down-ga').toggle();
 });
 
+$('#kintone').on('click', function(){
+  $('#kintone-content').slideToggle(350);
+  $('#fa-up-kintone').toggle();
+  $('#fa-down-kintone').toggle();
+});
+
 $('#itg').on('click', function(){
   $('#itg-content').slideToggle(350);
   $('#fa-up-itg').toggle();
